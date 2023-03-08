@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Lobster+Two&family=Montserrat:wght@400;600&family=Poppins:wght@200&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(34, 34, 34) 50%, rgb(255, 181, 44) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.container {
+    background: #1e293e;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.9em;
+    border-radius: 1rem;
+}
+
+.container-busca {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+}
+
+.container-busca input,
+.container-busca button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.container-busca input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container-busca button {
+    background-color: rgb(255, 181, 44);
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    padding: 10px;
+}
+
+.container-busca button:hover {
+    background-color: rgb(255, 206, 116);
+    cursor: pointer;
+}
+
+.container-busca input:focus {
+    color: #fff;
+}
+
+#resultado {
+    color: #fff;
+}
+
+.info {
+    position: relative;
+    /* display: grid;
+    grid-template-columns: 4fr 8fr; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.2em;
+}
+
+.poster {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating img {
+    width: 2em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
